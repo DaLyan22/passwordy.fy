@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Young+Serif&display=swap');
+body {
+    background-color: #686de0;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color: black;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container-password-generator {
+    background-color: white;
+    border-radius: 1.99%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 90%; /* Usar largura percentual */
+    max-width: 500px; /* Largura máxima para evitar que fique muito largo */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Evitar problemas de dimensionamento */
+}
+.gerar-senha {
+    color: rgb(87, 87, 87);
+    font-size: 20px;
+    padding: 8px;
+    font-family: 'Young Serif', serif;
+}
+.btn-gerar {
+    width: 60%; /* Ajustar largura para telas menores */
+    max-width: 200px; /* Largura máxima para evitar que fique muito largo */
+    height: 40px;
+    border-radius: 3px;
+    font-size: 18px;
+    color: white;
+    background-color: #9f68e0;
+    border: #9f68e0;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.copy-btn {
+    height: 40px;
+    background-color: #9f68e0;
+    border: #9f68e0;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 10px; /* Diminuir a margem para telas menores */
+    transition: 300ms;
+}
+#slidder {
+    padding: 20px 0; /* Reduzir o espaço em telas menores */
+    width: 100%; /* Usar largura percentual */
+    max-width: 300px; /* Largura máxima para evitar que fique muito largo */
+}
+.input-caracteres {font-family: 'Montserrat', sans-serif;}
+.copy {font-size: 15px;}
+.password-generated {font-size: 17px;}
+
+span {font-size: 22px;}
+/* Media Query para telas menores, por exemplo, telas com largura máxima de 768px */
+@media (max-width: 768px) {
+    body {font-size: 20px;}
+    .container-password-generator {
+        width: 95%; /* Ajustar largura para telas menores */
+        max-width: none; /* Remover largura máxima para telas menores */}
+    .btn-gerar {
+        width: 70%; /* Ajustar largura do botão para telas menores */
+        max-width: none; /* Remover largura máxima para telas menores */}
+    .copy-btn {margin: 0 5px; /* Reduzir margem do botão de cópia para telas menores */}
+    #slidder {padding: 10px 0; /* Reduzir o espaço para telas menores */}
+}

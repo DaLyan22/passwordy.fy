@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/lock.svg" type="image/png">
+    <meta name="keywords" content="Password.fy, Lyan²²">
+    <title>Password.fy | Lyan²²</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container-password-generator">
+            <p class="gerar-senha">Generate your password here</p>
+
+            <div class="input-caracteres">
+                <span>Range: </span><span id="range">4</span> <span> characters</span> <button onclick="copyPassword()"
+                class="copy-btn"><img src="assets/img/copy.svg" alt="copy"></button> <br>
+                <input type="range" id="slidder" min="4" max="15" value="4">
+            </div>
+
+            <span class="password-generated">Your password is: </span><span id="password-generated"class="password-generated"></span><br>
+
+            <button onclick="getPassword()" id="btn" class="btn-gerar">Generate Password</button>
+
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
